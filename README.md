@@ -1,16 +1,21 @@
 # Pet Planet
 
-Pet Planet is a responsive static pet shop website UI built with HTML, CSS, and vanilla JavaScript. It is designed as a frontend portfolio project, with polished product pages and demo interactions that do not require a backend.
+Pet Planet is a responsive frontend pet shop website built with HTML, CSS, and vanilla JavaScript. It was created as a portfolio project to demonstrate multi-page layout design, responsive navigation, product browsing, adoption filtering, and form-based user interactions without requiring a backend.
+
+## Live Demo
+
+Add your GitHub Pages link here after deployment.
 
 ## Features
 
-- Home page with hero section and services
-- Home search that routes visitors to the best matching page
+- Responsive home page with hero section, services, and testimonials
+- Search bar that routes visitors to the most relevant page
 - Product category pages for dogs, cats, birds, and fish
-- Adoption listing page with searchable, filterable pet cards
-- Contact page with frontend validation and demo confirmation message
-- Login and sign-up interface with demo localStorage behavior
-- Responsive layout for desktop, tablet, and mobile screens
+- Adoption page with searchable and filterable pet cards
+- Contact page with frontend validation and demo success feedback
+- Login and sign-up interface with demo `localStorage` account behavior
+- Shared navigation and footer across the site
+- Mobile-friendly layout for desktop, tablet, and phone screens
 
 ## Tech Stack
 
@@ -21,16 +26,32 @@ Pet Planet is a responsive static pet shop website UI built with HTML, CSS, and 
 
 ## Project Type
 
-This is a frontend/static website project. It does not include a backend, database, real authentication, payment system, or real contact form submission. Demo messages are shown in the UI so the flows feel complete while staying clearly frontend-only.
+This is a frontend/static website demo. It does not include a backend, database, real authentication, payment processing, or real contact form submission. Demo messages are shown in the UI so the user flows feel complete while staying clearly frontend-only.
+
+## What I Built
+
+- A complete multi-page website structure
+- Reusable visual style through shared CSS variables and common layout rules
+- Interactive adoption filters using JavaScript
+- A demo login/sign-up flow using browser storage
+- Frontend contact form validation
+- Responsive navigation with a mobile menu
 
 ## Project Structure
 
-- `index.html` - home page
-- `pages/` - all secondary HTML pages
-- `css/` - shared and page-specific stylesheets
-- `js/` - small frontend interactions
-- `images/` - image assets
+```text
+Pet Shop/
+|-- index.html
+|-- pages/
+|-- css/
+|-- js/
+`-- images/
+```
 
 ## How to View
 
 Open `index.html` in a browser, or deploy the repository with GitHub Pages.
+
+## Notes
+
+All images are used as static demo assets. Some pages include visible photo credits where applicable.
