@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+  
+    <!--home page-->
+    <div class="container-home">
+        
+        
+        <div class="main-content">
+            
+            <div class="banner">
+                <div class="navbar">
+                  <div class="logo-container">
+                    <img src="images/OIP.webp" class="logo" alt="PetPlanet logo">
+                    <span class="logo-text">PETPLANET</span>
+                </div>
+                
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label" aria-label="Open navigation menu">
+                    <span></span>
+                </label>
+                  
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/about.html">About</a></li>
+                        <li class="dropdown">
+                          <a href="pages/dogs.html">Products</a>
+                          <ul class="dropdown-content">
+                              <li><a href="pages/dogs.html">Dogs</a></li>
+                              <li><a href="pages/cats.html">Cats</a></li>
+                              <li><a href="pages/birds.html">Birds</a></li>
+                              <li><a href="pages/fish.html">Fish</a></li>
+                          </ul> </li>
+                        <li><a href="pages/contactUs.html">Contact us</a></li>
+                        <li><a href="pages/adoptNow.html">Adopt Now</a></li>
+                        <li><a href="pages/login.html">Sign up / Log in</a></li>
+                        
+                    </ul>
+                   
+                </div>
+                <div class="content">
+                    <form action="#" id="site-search" role="search">
+                        <label class="sr-only" for="site-search-input">Search PetPlanet</label>
+                        <input type="search" id="site-search-input" placeholder="Search here ..." autocomplete="off">
+                        <button type="submit" class="search-submit" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                    <p class="search-feedback" id="search-feedback" aria-live="polite"></p>
+                    
+                    <h1>WELCOME TO PET PLANET</h1>
+                    <p>Find everything for your little friends</p>
+                    <div>
+                        <a href="#servicesSection"></a>
+                            <button type="button" id="read-more-btn"><span></span>READ MORE</button>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="image-container">
+                  
+              <p class="caption">
+                photo by <a href="https://unsplash.com/@victor_vector" target="_blank">@victor_vector</a> on 
+                <a href="https://unsplash.com/photos/black-and-white-short-coated-dog-N04FIfHhv_k" target="_blank">Unsplash</a>
+              </p>
+            </div>
+        </div>
+    </div>
+  
+    <!--End home page-->
+
+
+    <!--services page-->
+    <a id="servicesSection"></a>
+    <header>
+      <h1>Our Services</h1>
+    </header>
+    
+    <section class="services">
+      <div class="service">
+        <i class="fas fa-shopping-basket"></i>
+        <h2>Supplies</h2>
+        <p> From premium food options tailored to every dietary need to cozy bedding, entertaining toys, stylish apparel, and essential grooming tools, we have everything you need to keep your pets happy, healthy, and well-cared for.</p>
+      </div>
+      
+      <div class="service">
+        <i class="fas fa-cut"></i>
+        <h2>Grooming</h2>
+        <p>We offer a pampering experience like no other with our grooming service! Treat your furry friends to a day of luxury and care with our expert groomers. From a soothing bath to a stylish trim, we cater to all breeds and sizes, ensuring your pets leave looking and feeling their best.</p>
+      </div>
+      
+      <div class="service">
+        <i class="fas fa-graduation-cap"></i>
+        <h2>Training</h2>
+        <p>Our expert trainers provide personalized sessions to help your pets develop essential skills and behaviors. Whether it's obedience training, agility courses, or socialization sessions, we're dedicated to nurturing a strong bond between you and your pet.</p>
+      </div>
+      
+      <div class="service">
+        <i class="fas fa-clock"></i>
+        <h2>24 Hour Care</h2>
+        <p>With our 24-hour care service, we provide round-the-clock attention to your pets, guaranteeing their comfort and safety at any hour of the day. Whether it's a late-night emergency or just a comforting presence during their stay.</p>
+      </div>
+    </section>
+  <!--End services page-->
+
+  <!--Testimonials Section-->
+  <section class="testimonials">
+    <h1>What Our Customers Say</h1>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <img src="images/small-fluffy-dog-breeds-maltipoo-66300ad363389.webp" alt="Small fluffy dog after grooming">
+        <p>"The grooming service is amazing! My Maltipoo looks like a star every time we visit. Highly recommended!"</p>
+        <h3>- Maria K.</h3>
+      </div>
+      <div class="testimonial">
+        <img src="images/catphoto.webp" alt="Cat customer testimonial photo">
+        <p>"Best pet shop in Athens. The supplies are top quality and the staff really cares about the animals."</p>
+        <h3>- George P.</h3>
+      </div>
+      <div class="testimonial">
+        <img src="images/Oryctolagus_cuniculus_Rcdo.webp" alt="Rabbit customer testimonial photo">
+        <p>"The 24-hour care gave me peace of mind when I had to travel. They kept me updated with photos!"</p>
+        <h3>- Elena S.</h3>
+      </div>
+    </div>
+  </section>
+  <!--End Testimonials Section-->
+  
+
+  <!--footer page-->
+  <footer>
+        
+    <p>Photo credit: <a href="https://unsplash.com/@victor_vector" target="_blank">@victor_vector</a> on <a href="https://unsplash.com/photos/black-and-white-short-coated-dog-N04FIfHhv_k" target="_blank">Unsplash</a>.</p>
+<div id="Footer">                
+<div id="iconBarfoot"  >
+    <h4>Follow Us</h4>
+    <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-linkedin-in"></i>
+    </div>
+
+</div>
+<div id="foot1" >
+    <dl>
+        <dt>Online Shopping</dt>
+        <dd> Terms Of Use</dd>
+        <dd>Privacy Policy</dd>
+        <dd>Returns Policy</dd>
+        <dd>Shipping Policy</dd>
+        <dd>customer Grievance</dd>
+        <dd>Redressal</dd>
+        <dd>Returns Center</dd>
+        <dd>Contact Us</dd>
+    </dl>   
+</div>
+<div id="foot2"> 
+    <dl>
+        <dt>Find Us</dt>
+        <dd>Phone: 210 000 0000</dd>
+        <dd>Email: Petplanet@gmail.com</dd>
+        <dd>Address: Athens, Greece</dd>
+    </dl>
+</div>
+<div id="foot3">
+    <h4>Sign up</h4>
+    
+        
+        <p>For us it's all about the love for
+            pets! Subscribe to our Newsletter and
+            receive special promotions and fun content!
+        </p>
+        
+    
+</div>
+</div>
+</footer>
+<!--end footer-->
+</body>
+</html>

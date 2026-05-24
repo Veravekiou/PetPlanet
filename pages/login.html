@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Log In</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="../js/login.js" defer></script>
+</head>
+<body>
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="../images/OIP.webp" class="logo" alt="PetPlanet logo">
+                <span class="logo-text">PETPLANET</span>
+            </div>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Open navigation menu">
+                <span></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="dogs.html">Products</a>
+                    <ul class="dropdown-content">
+                        <li><a href="dogs.html">Dogs</a></li>
+                        <li><a href="cats.html">Cats</a></li>
+                        <li><a href="birds.html">Birds</a></li>
+                        <li><a href="fish.html">Fish</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactUs.html">Contact us</a></li>
+                <li><a href="adoptNow.html">Adopt Now</a></li>
+                <li><a href="login.html">Sign up / Log in</a></li>
+            </ul>
+        </div>
+
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#" id="signup-form">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <button type="button" class="social" aria-label="Sign up with Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></button>
+                        <button type="button" class="social" aria-label="Sign up with Google"><i class="fab fa-google-plus-g" aria-hidden="true"></i></button>
+                        <button type="button" class="social" aria-label="Sign up with LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></button>
+                    </div>
+                    <span>or use your email</span>
+                    <label class="sr-only" for="signup-name">Name</label>
+                    <input type="text" id="signup-name" name="name" placeholder="Name" autocomplete="name" required>
+                    <label class="sr-only" for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="email" placeholder="Email" autocomplete="email" required>
+                    <label class="sr-only" for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" placeholder="Password" autocomplete="new-password" minlength="6" required>
+                    <button type="submit">Sign Up</button>
+                    <p class="form-status" id="signup-status" aria-live="polite"></p>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#" id="signin-form">
+                    <h1>Sign In</h1>
+                    <div class="social-container">
+                        <button type="button" class="social" aria-label="Sign in with Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></button>
+                        <button type="button" class="social" aria-label="Sign in with Google"><i class="fab fa-google-plus-g" aria-hidden="true"></i></button>
+                        <button type="button" class="social" aria-label="Sign in with LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></button>
+                    </div>
+                    <span>or use your account</span>
+                    <label class="sr-only" for="signin-email">Email</label>
+                    <input type="email" id="signin-email" name="email" placeholder="Email" autocomplete="email" required>
+                    <label class="sr-only" for="signin-password">Password</label>
+                    <input type="password" id="signin-password" name="password" placeholder="Password" autocomplete="current-password" minlength="6" required>
+                    <button type="button" class="forgot-password">Forgot your password?</button>
+                    <button type="submit">Log In</button>
+                    <p class="form-status" id="signin-status" aria-live="polite"></p>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button type="button" class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello !</h1>
+                        <p>Enter your personal details & join us</p>
+                        <button type="button" class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

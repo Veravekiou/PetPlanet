@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PetPlanet</title>
+    <link rel="stylesheet" href="../css/contactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/contact.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="../images/OIP.webp" class="logo" alt="PetPlanet logo">
+            <span class="logo-text">PETPLANET</span>
+        </div>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Open navigation menu">
+            <span></span>
+        </label>
+
+        <ul class="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="dogs.html">Products</a>
+                <ul class="dropdown-content">
+                    <li><a href="dogs.html">Dogs</a></li>
+                    <li><a href="cats.html">Cats</a></li>
+                    <li><a href="birds.html">Birds</a></li>
+                    <li><a href="fish.html">Fish</a></li>
+                </ul>
+            </li>
+            <li><a href="contactUs.html">Contact us</a></li>
+            <li><a href="adoptNow.html">Adopt Now</a></li>
+            <li><a href="login.html">Sign up / Log in</a></li>
+        </ul>
+    </div>
+
+    <main class="contact-page">
+        <section class="contact-hero" aria-labelledby="contact-title">
+            <div class="contact-copy">
+                <p class="eyebrow">We are here for every paw, wing, and fin</p>
+                <h1 id="contact-title">Contact PetPlanet</h1>
+                <p>
+                    Need product advice, adoption guidance, or help with an order?
+                    Send us a note and our team will get back to you as soon as possible.
+                </p>
+                <div class="contact-actions" aria-label="Quick contact options">
+                    <a href="tel:+302100000000"><i class="fas fa-phone-alt"></i> 210 000 0000</a>
+                    <a href="mailto:Petplanet@gmail.com"><i class="fas fa-envelope"></i> Petplanet@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-panel">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h2>Visit Us</h2>
+                        <p>Athens, Greece</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h2>Store Hours</h2>
+                        <p>Mon - Fri: 09:00 - 21:00</p>
+                        <p>Sat: 10:00 - 16:00</p>
+                        <p>Sun: Closed</p>
+                    </div>
+                </div>
+                <div class="contact-card highlight">
+                    <i class="fas fa-heart"></i>
+                    <div>
+                        <h2>Adoption Support</h2>
+                        <p>Ask us anything before welcoming a new friend home.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-content" aria-label="Contact form and store details">
+            <div class="contact-form">
+                <p class="section-label">Send a message</p>
+                <h2>How can we help?</h2>
+                <form action="#" method="post" id="contact-form">
+                    <div class="field-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Order, adoption, product advice..." required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us what you need" required></textarea>
+                    </div>
+
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    <p class="form-status" id="contact-status" aria-live="polite"></p>
+                </form>
+            </div>
+
+            <aside class="store-info" aria-label="PetPlanet contact details">
+                <div class="info-block">
+                    <h2>Quick Answers</h2>
+                    <p>
+                        For urgent order questions, call us during store hours.
+                        For adoption questions, include your home setup and preferred pet type.
+                    </p>
+                </div>
+
+                <div class="info-list">
+                    <div>
+                        <span><i class="fas fa-truck"></i></span>
+                        <p><strong>Delivery help</strong>Same-day updates for Athens orders.</p>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-shopping-bag"></i></span>
+                        <p><strong>In-store pickup</strong>Reserve products before you visit.</p>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-user-md"></i></span>
+                        <p><strong>Pet care guidance</strong>Friendly advice for food, toys, and habitats.</p>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="map-section">
+            <div class="map-header">
+                <p class="section-label">Our Location</p>
+                <h2>Find Us in Athens</h2>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100645.72778467414!2d23.64964645211915!3d37.98380961819614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x273635457666b74e!2sAthens!5e0!3m2!1sen!2sgr!4v1716110000000!5m2!1sen!2sgr" 
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Photo credit: <a href="https://unsplash.com/@bto16180" target="_blank">@bto16180</a> on <a href="https://unsplash.com/photos/woman-and-cat-joining-hands-N_G2Sqdy9QY" target="_blank">Unsplash</a>.</p>
+        <div id="Footer">
+            <div id="iconBarfoot">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div id="foot1">
+                <dl>
+                    <dt>Online Shopping</dt>
+                    <dd> Terms Of Use</dd>
+                    <dd>Privacy Policy</dd>
+                    <dd>Returns Policy</dd>
+                    <dd>Shipping Policy</dd>
+                    <dd>customer Grievance</dd>
+                    <dd>Redressal</dd>
+                    <dd>Returns Center</dd>
+                    <dd>Contact Us</dd>
+                </dl>
+            </div>
+            <div id="foot2">
+                <dl>
+                    <dt>Find Us</dt>
+                    <dd>Phone: 210 000 0000</dd>
+                    <dd>Email: Petplanet@gmail.com</dd>
+                    <dd>Address: Athens, Greece</dd>
+                </dl>
+            </div>
+            <div id="foot3">
+                <h4>Sign up</h4>
+                <p>
+                    For us it's all about the love for pets! Subscribe to our Newsletter and
+                    receive special promotions and fun content!
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
