@@ -164,14 +164,20 @@ form:hover {
 }
 
 form:hover input,
-form:focus-within input {
+form:focus-within input,
+form.is-expanded input {
     display: block;
 }
 
 form:hover .fa,
-form:focus-within .fa {
+form:focus-within .fa,
+form.is-expanded .fa {
     background: var(--brand-accent);
     color: white;
+}
+
+form.is-expanded {
+    width: 300px;
 }
 
 .search-feedback {
@@ -799,7 +805,8 @@ tr:hover {
   }
 
   .content form:hover,
-  .content form:focus-within {
+  .content form:focus-within,
+  .content form.is-expanded {
     width: min(300px, 100%);
   }
 

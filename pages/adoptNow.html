@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/adoptNow.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/adoptNow.js" defer></script>
 </head>
 <body>
     <div class="navbar">
@@ -33,7 +34,7 @@
                 </ul>
             </li>
             <li><a href="contactUs.html">Contact us</a></li>
-            <li><a href="adoptNow.html">Adopt Now</a></li>
+            <li><a class="active" href="adoptNow.html" aria-current="page">Adopt Now</a></li>
             <li><a href="login.html">Sign up / Log in</a></li>
         </ul>
     </div>
@@ -45,8 +46,29 @@
             <p>Meet the pets waiting for a loving home. Browse their stories and contact us when one of them feels like the right match.</p>
         </section>
 
+        <section class="adoption-tools" aria-label="Filter pets for adoption">
+            <div class="adoption-search">
+                <label class="sr-only" for="pet-search">Search pets</label>
+                <div class="search-field">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input type="search" id="pet-search" placeholder="Search by name, type, or age" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="animal-filters" aria-label="Animal type filters">
+                <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="filter-button" data-filter="cat" aria-pressed="false"><i class="fas fa-cat" aria-hidden="true"></i>Cats</button>
+                <button type="button" class="filter-button" data-filter="dog" aria-pressed="false"><i class="fas fa-dog" aria-hidden="true"></i>Dogs</button>
+                <button type="button" class="filter-button" data-filter="hamster" aria-pressed="false"><i class="fas fa-paw" aria-hidden="true"></i>Hamsters</button>
+                <button type="button" class="filter-button" data-filter="rabbit" aria-pressed="false"><i class="fas fa-carrot" aria-hidden="true"></i>Rabbits</button>
+                <button type="button" class="filter-button" data-filter="bird" aria-pressed="false"><i class="fas fa-dove" aria-hidden="true"></i>Birds</button>
+            </div>
+
+            <p class="filter-status" id="filter-status" aria-live="polite"></p>
+        </section>
+
         <section class="pet-grid" aria-label="Pets available for adoption">
-            <article class="pet-card">
+            <article class="pet-card" data-type="cat">
                 <img src="../images/pexels-kowalievska-1170986.webp" alt="Alice, a relaxed gray cat">
                 <div class="pet-card-content">
                     <span class="pet-tag">Cat</span>
@@ -57,7 +79,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="dog">
                 <img src="../images/0-dogs-hero.webp" alt="Jack, an energetic Jack Russell dog">
                 <div class="pet-card-content">
                     <span class="pet-tag">Dog</span>
@@ -68,7 +90,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="hamster">
                 <img src="../images/AdobeStock_347974747_438127_reduced.webp" alt="Chloe and Henri, two small hamsters">
                 <div class="pet-card-content">
                     <span class="pet-tag">Hamsters</span>
@@ -79,7 +101,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="cat">
                 <img src="../images/Understanding Your Cat's Body LanguageTEASER.webp" alt="Speaky, a vocal young cat">
                 <div class="pet-card-content">
                     <span class="pet-tag">Cat</span>
@@ -90,7 +112,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="cat">
                 <img src="../images/images (1).webp" alt="Chester, an orange kitten">
                 <div class="pet-card-content">
                     <span class="pet-tag">Cat</span>
@@ -101,7 +123,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="dog">
                 <img src="../images/small-fluffy-dog-breeds-maltipoo-66300ad363389.webp" alt="Max, a small fluffy puppy">
                 <div class="pet-card-content">
                     <span class="pet-tag">Dog</span>
@@ -112,7 +134,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="hamster">
                 <img src="../images/shutterstock_1672896298-scaled-1-1024x684.webp" alt="Charly, a tiny hamster">
                 <div class="pet-card-content">
                     <span class="pet-tag">Hamster</span>
@@ -123,7 +145,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="dog">
                 <img src="../images/images.webp" alt="Bruno, a happy young dog">
                 <div class="pet-card-content">
                     <span class="pet-tag">Dog</span>
@@ -134,7 +156,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="cat">
                 <img src="../images/VIER PFOTEN_2016-07-08_011-4993x3455-1920x1329.webp" alt="Fiona, a calm cat">
                 <div class="pet-card-content">
                     <span class="pet-tag">Cat</span>
@@ -145,7 +167,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="rabbit">
                 <img src="../images/rabbit-475261_0.webp" alt="Fluffy, a soft rabbit">
                 <div class="pet-card-content">
                     <span class="pet-tag">Rabbit</span>
@@ -156,7 +178,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="cat">
                 <img src="../images/catphoto.webp" alt="Sandy, an elegant cat">
                 <div class="pet-card-content">
                     <span class="pet-tag">Cat</span>
@@ -167,7 +189,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="bird">
                 <img src="../images/istock_000006766776_large.webp" alt="Olie and Aris, two colorful parrots">
                 <div class="pet-card-content">
                     <span class="pet-tag">Parrots</span>
@@ -178,7 +200,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="dog">
                 <img src="../images/American-Eskimo-Dog-standing-in-the-grass-in-bright-sunlight-400x267.webp" alt="Molly, a white puppy">
                 <div class="pet-card-content">
                     <span class="pet-tag">Dog</span>
@@ -189,7 +211,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="rabbit">
                 <img src="../images/Oryctolagus_cuniculus_Rcdo.webp" alt="Andy, a brown rabbit">
                 <div class="pet-card-content">
                     <span class="pet-tag">Rabbit</span>
@@ -200,7 +222,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="dog">
                 <img src="../images/i-dont-understand-what-you-all-mean-by-comfort-characters-v0-rpdvvx5qhsdc1.webp" alt="Roki, a young puppy">
                 <div class="pet-card-content">
                     <span class="pet-tag">Dog</span>
@@ -211,7 +233,7 @@
                 </div>
             </article>
 
-            <article class="pet-card">
+            <article class="pet-card" data-type="bird">
                 <img src="../images/perched-green-parrot-hd-9cjbn3ykpmyoqzw7.webp" alt="Poppy, a green parakeet">
                 <div class="pet-card-content">
                     <span class="pet-tag">Parakeet</span>
@@ -222,10 +244,11 @@
                 </div>
             </article>
         </section>
+        <p class="no-results" id="no-results" hidden>No pets match your filters. Try another type or search term.</p>
     </main>
 
     <footer>
-        <p>Photo credit: <a href="https://unsplash.com/@anotherleaf" target="_blank">anotherleaf</a> on <a href="https://unsplash.com/photos/short-coated-black-puppy-qGkVJ7Tx36s" target="_blank">Unsplash</a>.</p>
+        <p>Photo credit: <a href="https://unsplash.com/@anotherleaf" target="_blank" rel="noopener noreferrer">anotherleaf</a> on <a href="https://unsplash.com/photos/short-coated-black-puppy-qGkVJ7Tx36s" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
         <div id="Footer">
             <div id="iconBarfoot">
                 <h4>Follow Us</h4>
@@ -238,13 +261,13 @@
             </div>
             <div id="foot1">
                 <dl>
-                    <dt>Online Shopping</dt>
+                    <dt>Demo Store Info</dt>
                     <dd>Terms Of Use</dd>
                     <dd>Privacy Policy</dd>
                     <dd>Returns Policy</dd>
                     <dd>Shipping Policy</dd>
-                    <dd>Customer Grievance</dd>
-                    <dd>Redressal</dd>
+                    <dd>Customer Support</dd>
+                    <dd>Help Center</dd>
                     <dd>Returns Center</dd>
                     <dd>Contact Us</dd>
                 </dl>
@@ -253,13 +276,13 @@
                 <dl>
                     <dt>Find Us</dt>
                     <dd>Phone: 210 000 0000</dd>
-                    <dd>Email: Petplanet@gmail.com</dd>
+                    <dd>Email: hello@petplanet.example</dd>
                     <dd>Address: Athens, Greece</dd>
                 </dl>
             </div>
             <div id="foot3">
-                <h4>Sign up</h4>
-                <p>For us it's all about the love for pets! Subscribe to our Newsletter and receive special promotions and fun content!</p>
+                <h4>Newsletter Demo</h4>
+                <p>This static demo shows where newsletter messaging would appear in a full ecommerce site.</p>
             </div>
         </div>
     </footer>

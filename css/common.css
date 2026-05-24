@@ -132,6 +132,19 @@ body {
     transform: translateY(-1px);
 }
 
+.navbar ul li a.active,
+.navbar ul li a[aria-current="page"] {
+    background: var(--brand-accent);
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(155, 92, 143, 0.24);
+}
+
+.navbar ul li a.active:hover,
+.navbar ul li a[aria-current="page"]:hover {
+    background: var(--brand-accent-dark);
+    color: #ffffff;
+}
+
 .navbar ul li::after,
 .navbar ul li:hover::after {
     content: none;
@@ -198,6 +211,12 @@ body {
     background: var(--brand-light);
     color: var(--brand-accent-dark);
     transform: none;
+}
+
+.navbar ul .dropdown-content li a.active,
+.navbar ul .dropdown-content li a[aria-current="page"] {
+    background: var(--brand-accent);
+    color: #ffffff;
 }
 
 .navbar ul li.dropdown:hover .dropdown-content {
