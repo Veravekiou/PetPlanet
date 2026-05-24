@@ -4,7 +4,7 @@ Pet Planet is a responsive frontend pet shop website built with HTML, CSS, and v
 
 ## Live Demo
 
-Add your GitHub Pages link here after deployment.
+[View the live site](https://veravekiou.github.io/PetPlanet/)
 
 ## Features
 
